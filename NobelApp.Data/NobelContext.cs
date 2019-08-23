@@ -8,6 +8,7 @@ namespace NobelApp.Data
 	{
 		public DbSet<Laureate> Laureates { get; set; }
 		public DbSet<Prize> Prizes { get; set; }
+		public DbSet<Organization> Organizations { get; set; }
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
