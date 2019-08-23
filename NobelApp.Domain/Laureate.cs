@@ -10,6 +10,9 @@ namespace NobelApp.Domain
 		public string BirthCity { get; set; }
 		public string BirthCountry { get; set; }
 		public SexType Sex { get; set; }
-		public Organization Organisation { get; set; }
+		public Organization Organization { get; set; }
+		public DateTime DeathDate { get; set; }
+		public string DeathCity { get; set; }
+		public string DeathCountry { get; set; }
 	}
 }

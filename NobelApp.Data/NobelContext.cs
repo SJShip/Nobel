@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NobelApp.Domain;
+using Microsoft.Extensions.Configuration;
 using System;
 
 namespace NobelApp.Data
@@ -10,11 +11,16 @@ namespace NobelApp.Data
 		public DbSet<Prize> Prizes { get; set; }
 		public DbSet<Organization> Organizations { get; set; }
 
-		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-		{
-			optionsBuilder.UseSqlServer("Server = (localdb)\\mssqllocaldb; Database = NobelAppData; Trusted_Connection = True; ");
+		public string SeedSourceFilePath { get; set; }
 
-			base.OnConfiguring(optionsBuilder);
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
+		{
+			modelBuilder.Seed(SeedSourceFilePath);
+		}
+
+		public NobelContext(DbContextOptions<NobelContext> options) : base(options)
+		{
+
 		}
 	}
 }
