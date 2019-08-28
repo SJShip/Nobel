@@ -43,10 +43,15 @@ namespace NobelAppWeb
 			var serviceScopeFactory = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>();
 			using (var serviceScope = serviceScopeFactory.CreateScope())
 			{
-				NobelContext dbContext = serviceScope.ServiceProvider.GetService<NobelContext>();
-				dbContext.SeedSourceFilePath = Configuration.GetValue<string>("SeedSourceFilePath");
-				dbContext.Database.EnsureDeleted();
-				dbContext.Database.EnsureCreated();
+				using (NobelContext dbContext = serviceScope.ServiceProvider.GetService<NobelContext>())
+				{
+					var seedSourceFilePath = Configuration.GetValue<string>("SeedSourceFilePath");
+
+					dbContext.Database.EnsureDeleted();
+					dbContext.Database.EnsureCreated();
+
+					NobelContext.Seed(dbContext, seedSourceFilePath);
+				}
 			}
 		}
 	}
