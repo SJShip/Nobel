@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NobelApp.Domain
+namespace NobelApp.Data.Domain
 {
-	public class Organization
+	public class OrganizationalLaureate
 	{
 		public int Id { get; set; }
+
 		public string Name { get; set; }
-		public string City { get; set; }
-		public string Country { get; set; }
+
+		public int PrizeId { get; set; }
+		public Prize Prize { get; set; }
 	}
 }

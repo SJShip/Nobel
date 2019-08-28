@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NobelApp.Domain
+namespace NobelApp.Data.Domain
 {
 	public enum SexType
 	{

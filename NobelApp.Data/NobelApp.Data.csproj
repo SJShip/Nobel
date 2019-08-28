@@ -13,8 +13,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\NobelApp.Domain\NobelApp.Domain.csproj" />
-  </ItemGroup>
-
 </Project>

@@ -5,9 +5,7 @@ VisualStudioVersion = 16.0.29209.62
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NobelApp.Data", "NobelApp.Data\NobelApp.Data.csproj", "{DCC8A2E8-13A7-42DA-9124-380EC2BBEF00}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NobelApp.Domain", "NobelApp.Domain\NobelApp.Domain.csproj", "{1FACBBD0-1134-46A1-83B4-1D0A3C0C34F5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NobelAppWeb", "NobelAppWeb\NobelAppWeb.csproj", "{9C1CB9EC-65FB-482C-9C23-D231913C43C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NobelAppWeb", "NobelAppWeb\NobelAppWeb.csproj", "{9C1CB9EC-65FB-482C-9C23-D231913C43C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		{DCC8A2E8-13A7-42DA-9124-380EC2BBEF00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCC8A2E8-13A7-42DA-9124-380EC2BBEF00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCC8A2E8-13A7-42DA-9124-380EC2BBEF00}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1FACBBD0-1134-46A1-83B4-1D0A3C0C34F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1FACBBD0-1134-46A1-83B4-1D0A3C0C34F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1FACBBD0-1134-46A1-83B4-1D0A3C0C34F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1FACBBD0-1134-46A1-83B4-1D0A3C0C34F5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9C1CB9EC-65FB-482C-9C23-D231913C43C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9C1CB9EC-65FB-482C-9C23-D231913C43C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C1CB9EC-65FB-482C-9C23-D231913C43C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
